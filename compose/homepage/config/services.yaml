@@ -1,14 +1,15 @@
 - Infrastructure:
     - Homepage:
         icon: homepage.png
-        href: http://node1:3000/
+        href: /
 
     - Portainer:
         icon: portainer.png
-        href: http://node1:9000/
+        href: /portainer/
 
     - Uptime Kuma:
         icon: uptime-kuma.png
+        href: /kuma/
 
 - Platform:
     - PostgreSQL:

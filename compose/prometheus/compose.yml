@@ -6,9 +6,6 @@ services:
 
     restart: unless-stopped
 
-    ports:
-      - "9090:9090"
-
     volumes:
       - /srv/data/prometheus:/prometheus
       - ./prometheus.yml:/etc/prometheus/prometheus.yml

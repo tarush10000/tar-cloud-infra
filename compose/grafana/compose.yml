@@ -6,9 +6,6 @@ services:
 
     restart: unless-stopped
 
-    ports:
-      - "3002:3000"
-
     volumes:
       - /srv/data/grafana:/var/lib/grafana
 

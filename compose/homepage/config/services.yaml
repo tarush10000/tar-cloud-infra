@@ -11,19 +11,35 @@
         icon: uptime-kuma.png
         href: /kuma/
 
-- Platform:
-    - PostgreSQL:
-        icon: postgres.png
+    - Grafana:
+        icon: grafana.png
+        href: /grafana/
+
+    - Prometheus:
+        icon: prometheus.png
+        href: /prometheus/
 
     - MinIO:
         icon: minio.png
+        href: /minio/
+
+- Platform:
+    - PostgreSQL:
+        icon: postgres.png
+        href: /postgres/
+
+    - MinIO:
+        icon: minio.png
+        href: /minio/
 
 - Monitoring:
     - Prometheus:
         icon: prometheus.png
+        href: /prometheus/
 
     - Grafana:
         icon: grafana.png
+        href: /grafana/
 
 - Applications:
     - Portfolio:

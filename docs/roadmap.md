@@ -17,7 +17,7 @@
 
 - [ ] Nginx
 - [ ] Portainer
-- [ ] Homepage Dashboard
+- [x] Homepage Dashboard
 - [ ] Uptime Kuma
 
 ---

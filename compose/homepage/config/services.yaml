@@ -1,0 +1,38 @@
+- Infrastructure:
+    - Homepage:
+        icon: homepage.png
+        href: http://localhost:3000
+
+    - Portainer:
+        icon: portainer.png
+
+    - Uptime Kuma:
+        icon: uptime-kuma.png
+
+- Platform:
+    - PostgreSQL:
+        icon: postgres.png
+
+    - MinIO:
+        icon: minio.png
+
+- Monitoring:
+    - Prometheus:
+        icon: prometheus.png
+
+    - Grafana:
+        icon: grafana.png
+
+- Applications:
+    - Portfolio:
+        icon: mdi-web
+
+- Utilities:
+    - URL Shortener:
+        icon: mdi-link
+
+    - QR Generator:
+        icon: mdi-qrcode
+
+    - Linktree:
+        icon: mdi-account-network

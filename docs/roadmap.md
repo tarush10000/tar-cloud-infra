@@ -1,38 +1,100 @@
 # Tar Cloud Roadmap
 
-## Phase 1 - Server Foundation ✅
-- [x] Ubuntu Server
-- [x] SSH
-- [x] SSH Keys
+## Phase 1 — Server Foundation
+
+- [x] Ubuntu Server Installation
+- [x] SSH Configuration
+- [x] SSH Key Authentication
 - [x] Docker
-- [ ] Tailscale
-- [ ] Firewall
+- [x] Docker Compose
+- [x] Tailscale
+- [x] Firewall (UFW)
+- [x] Automatic Updates
 
-## Phase 2 - CI/CD
-- [ ] GitHub Actions
-- [ ] Automatic deployment
-- [ ] Health checks
-- [ ] Rollback support
+---
 
-## Phase 3 - Storage
-- [ ] Node2 setup
-- [ ] Shared storage
-- [ ] Automated backups
+## Phase 2 — Core Infrastructure
 
-## Phase 4 - Compute
-- [ ] Reverse proxy
-- [ ] Application hosting
-- [ ] SSL certificates
+- [ ] Nginx
+- [ ] Portainer
+- [ ] Homepage Dashboard
+- [ ] Uptime Kuma
 
-## Phase 5 - Monitoring
+---
+
+## Phase 3 — Platform Services
+
+- [ ] PostgreSQL
+- [ ] MinIO
+- [ ] Redis
+
+---
+
+## Phase 4 — Monitoring
+
+- [ ] Node Exporter
 - [ ] Prometheus
 - [ ] Grafana
-- [ ] Loki
-- [ ] Alertmanager
+- [ ] cAdvisor
 
-## Phase 6 - Tar Cloud Platform
-- [ ] Dashboard
-- [ ] User management
-- [ ] Storage API
-- [ ] Compute API
+---
+
+## Phase 5 — CI/CD
+
+- [ ] GitHub Actions
+- [ ] Automatic Deployments
+- [ ] Rollback Strategy
+
+---
+
+## Phase 6 — Applications
+
+- [ ] Portfolio Website
+- [ ] Gemini Chatbot
+- [ ] Internal Dashboard
+
+---
+
+## Phase 7 — Productivity Tools
+
+- [ ] URL Shortener
+- [ ] Linktree
+- [ ] QR Generator
+- [ ] Pastebin
+
+---
+
+## Phase 8 — Cloud Storage
+
+- [ ] Tar Drive API
+- [ ] Web Interface
+- [ ] File Sharing
+- [ ] Version History
+
+---
+
+## Phase 9 — Multi-Node Cluster
+
+- [ ] Node2 Setup
+- [ ] Dedicated Storage
+- [ ] Backup Automation
+- [ ] Shared Storage
+
+---
+
+## Phase 10 — AI Platform
+
+- [ ] AI Gateway
+- [ ] Model Management
+- [ ] Embedding Service
 - [ ] AI API
+
+---
+
+## Future Goals
+
+- Unified Dashboard
+- Multi-node Scheduling
+- Distributed Storage
+- High Availability
+- Custom CLI

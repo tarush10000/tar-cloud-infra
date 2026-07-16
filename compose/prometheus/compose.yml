@@ -6,6 +6,10 @@ services:
 
     restart: unless-stopped
 
+    command:
+      - --web.external-url=/prometheus
+      - --web.route-prefix=/
+
     volumes:
       - /srv/data/prometheus:/prometheus
       - ./prometheus.yml:/etc/prometheus/prometheus.yml

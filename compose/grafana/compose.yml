@@ -6,6 +6,10 @@ services:
 
     restart: unless-stopped
 
+    environment:
+      GF_SERVER_ROOT_URL: "%(protocol)s://%(domain)s/grafana/"
+      GF_SERVER_SERVE_FROM_SUB_PATH: "true"
+
     volumes:
       - /srv/data/grafana:/var/lib/grafana
 

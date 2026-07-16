@@ -26,3 +26,17 @@
 [2026-07-16T08:06:29.780Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
 [2026-07-16T09:49:48.914Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
 [2026-07-16T10:15:17.216Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T10:26:19.254Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T10:27:59.140Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T10:28:01.875Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T10:28:09.591Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T10:29:03.470Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T10:32:41.726Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T10:33:33.568Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T11:27:02.096Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T11:28:18.457Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T11:28:46.565Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T11:28:47.224Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T11:30:41.247Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T11:45:09.099Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T11:45:13.375Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL

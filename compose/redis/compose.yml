@@ -15,3 +15,10 @@ services:
     command: >
       redis-server
       --appendonly yes
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

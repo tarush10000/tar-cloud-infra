@@ -11,3 +11,10 @@ services:
     volumes:
       - /srv/tar-cloud-infra/compose/nginx/conf.d:/etc/nginx/conf.d:ro
       - /srv/docker/nginx/html:/usr/share/nginx/html:ro
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

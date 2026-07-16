@@ -11,3 +11,10 @@ services:
 
     volumes:
       - /srv/data/uptime-kuma:/app/data
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

@@ -12,3 +12,10 @@ services:
     volumes:
       - /srv/data/prometheus:/prometheus
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

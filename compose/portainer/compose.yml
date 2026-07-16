@@ -12,3 +12,10 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /srv/data/portainer:/data
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

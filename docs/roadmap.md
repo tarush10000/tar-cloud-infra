@@ -15,17 +15,17 @@
 
 ## Phase 2 — Core Infrastructure
 
-- [ ] Nginx
-- [ ] Portainer
+- [x] Nginx
+- [x] Portainer
 - [x] Homepage Dashboard
-- [ ] Uptime Kuma
+- [x] Uptime Kuma
 
 ---
 
 ## Phase 3 — Platform Services
 
-- [ ] PostgreSQL
-- [ ] MinIO
+- [x] PostgreSQL
+- [x] MinIO
 - [ ] Redis
 
 ---

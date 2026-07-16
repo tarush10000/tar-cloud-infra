@@ -14,3 +14,10 @@ services:
 
     environment:
       HOMEPAGE_ALLOWED_HOSTS: "*"
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

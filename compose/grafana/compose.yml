@@ -11,3 +11,10 @@ services:
 
     volumes:
       - /srv/data/grafana:/var/lib/grafana
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

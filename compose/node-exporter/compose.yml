@@ -14,3 +14,10 @@ services:
 
     volumes:
       - '/:/host:ro,rslave'
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

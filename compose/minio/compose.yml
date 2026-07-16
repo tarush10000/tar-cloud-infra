@@ -18,3 +18,10 @@ services:
 
     volumes:
       - /srv/data/minio:/data
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

@@ -1,10 +1,11 @@
 - Infrastructure:
     - Homepage:
         icon: homepage.png
-        href: http://localhost:3000
+        href: http://node1:3000/
 
     - Portainer:
         icon: portainer.png
+        href: http://node1:9000/
 
     - Uptime Kuma:
         icon: uptime-kuma.png

@@ -1,0 +1,8 @@
+[2026-07-16T06:57:59.431Z] info: kubernetes.yaml was copied to the config folder
+[2026-07-16T06:58:02.572Z] info: proxmox.yaml was copied to the config folder
+[2026-07-16T06:58:02.602Z] info: custom.css was copied to the config folder
+[2026-07-16T06:58:02.604Z] info: custom.js was copied to the config folder
+[2026-07-16T06:58:02.829Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T06:58:20.423Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T06:59:54.122Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL
+[2026-07-16T07:06:46.941Z] error: <service-helpers> Error getting services from Docker server 'my-docker': TypeError [ERR_INVALID_URL]: Invalid URL

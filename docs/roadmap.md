@@ -26,16 +26,16 @@
 
 - [x] PostgreSQL
 - [x] MinIO
-- [ ] Redis
+- [x] Redis
 
 ---
 
 ## Phase 4 — Monitoring
 
 - [ ] Node Exporter
-- [ ] Prometheus
-- [ ] Grafana
-- [ ] cAdvisor
+- [x] Prometheus
+- [x] Grafana
+- [x] cAdvisor
 
 ---
 

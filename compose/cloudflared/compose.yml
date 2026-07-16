@@ -1,0 +1,19 @@
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+
+    container_name: cloudflared
+
+    restart: unless-stopped
+
+    command: tunnel run
+
+    volumes:
+      - /srv/docker/cloudflared:/etc/cloudflared
+
+    networks:
+      - tar-cloud
+
+networks:
+  tar-cloud:
+    external: true

@@ -1,18 +1,20 @@
 services:
-  prometheus:
-    image: prom/prometheus:latest
+  portainer:
+    image: portainer/portainer-ce:latest
 
-    container_name: prometheus
+    container_name: portainer
 
     restart: unless-stopped
 
     command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
       - --web.external-url=/prometheus
       - --web.route-prefix=/
 
     volumes:
       - /srv/data/prometheus:/prometheus
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - /srv/tar-cloud-infra/compose/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
 
     networks:
       - tar-cloud

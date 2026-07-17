@@ -1,0 +1,24 @@
+name: Update Containers
+
+on:
+  schedule:
+    - cron: "0 2 * * 6"
+
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update Infrastructure
+        run: |
+          cd /srv/tar-cloud-infra
+
+          find compose -name compose.yml | while read file
+          do
+            docker compose -f "$file" pull
+            docker compose -f "$file" up -d
+          done

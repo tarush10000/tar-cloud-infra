@@ -1,0 +1,20 @@
+name: Scheduled Backup
+
+on:
+  schedule:
+    - cron: "0 21 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Backup
+        run: |
+          cd /srv/tar-cloud-infra
+          chmod +x scripts/backup.sh
+          ./scripts/backup.sh

@@ -1,0 +1,31 @@
+name: Documentation Checks
+
+on:
+  push:
+    paths:
+      - "README.md"
+      - "docs/**"
+
+  pull_request:
+    paths:
+      - "README.md"
+      - "docs/**"
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Markdown Lint
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: |
+            README.md
+            docs/**/*.md
+
+      - name: Check Links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true

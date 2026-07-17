@@ -1,0 +1,19 @@
+name: Docker Cleanup
+
+on:
+  schedule:
+    - cron: "0 3 * * 0"
+
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: self-hosted
+
+    steps:
+      - name: Docker Cleanup
+        run: |
+          docker image prune -af
+          docker container prune -f
+          docker network prune -f
+          docker builder prune -af

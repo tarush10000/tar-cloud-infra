@@ -1,4 +1,4 @@
-name: Deploy Infrastructure
+name: Deploy Tar Cloud
 
 on:
   push:
@@ -10,14 +10,15 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Deploy
+      - name: Deploy Infrastructure
         run: |
-          cd /srv/tar-cloud-infra
-          git pull
+          rsync -a --delete ./ /srv/tar-cloud-infra/
 
-          for f in compose/*/compose.yml
-          do
-            docker compose -f "$f" up -d
-          done
+          cd /srv/tar-cloud-infra
+
+          chmod +x scripts/deploy.sh
+
+          ./scripts/deploy.sh

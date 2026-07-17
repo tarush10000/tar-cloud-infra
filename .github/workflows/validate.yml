@@ -1,0 +1,47 @@
+name: Validate Infrastructure
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate Docker Compose Files
+        run: |
+          find compose -name "compose.yml" -print0 | while IFS= read -r -d '' file; do
+            echo "Validating $file"
+            docker compose -f "$file" config >/dev/null
+          done
+
+      - name: Validate Nginx Configuration
+        run: |
+          docker run --rm \
+            -v "$PWD/compose/nginx/conf.d:/etc/nginx/conf.d:ro" \
+            nginx:stable-alpine \
+            nginx -t
+
+      - name: Install Validation Tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+          pip install yamllint
+
+      - name: Validate Shell Scripts
+        run: |
+          shellcheck scripts/*.sh
+
+      - name: Validate YAML
+        run: |
+          yamllint .
+
+      - name: Validate Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: |
+            **/*.md

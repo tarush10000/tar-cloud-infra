@@ -5,9 +5,6 @@ services:
     container_name: portainer
 
     restart: unless-stopped
-    
-    environment:
-      TRUSTED_ORIGINS: "https://portainer.tarush.in"
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

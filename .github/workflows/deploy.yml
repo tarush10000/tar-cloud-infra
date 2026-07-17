@@ -11,6 +11,24 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      - name: Create dummy environment
+        run: |
+          mkdir -p /srv/docker/env || true
+
+          cat > /srv/docker/env/tar-cloud.env <<EOF
+          CLOUDFLARE_TUNNEL_TOKEN=dummy
+          GRAFANA_USER=admin
+          GRAFANA_PASSWORD=dummy
+          HOMEPAGE_VAR_GRAFANA_USERNAME=admin
+          HOMEPAGE_VAR_GRAFANA_PASSWORD=dummy
+          POSTGRES_USER=dummy
+          POSTGRES_PASSWORD=dummy
+          POSTGRES_DB=dummy
+          MINIO_ROOT_USER=dummy
+          MINIO_ROOT_PASSWORD=dummy
+          REDIS_PASSWORD=dummy
+          EOF
+
       - name: Update Repository
         run: |
           cd /srv/tar-cloud-infra

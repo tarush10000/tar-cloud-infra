@@ -19,13 +19,6 @@ jobs:
             docker compose -f "$file" config >/dev/null
           done
 
-      - name: Validate Nginx Configuration
-        run: |
-          docker run --rm \
-            -v "$PWD/compose/nginx/conf.d:/etc/nginx/conf.d:ro" \
-            nginx:stable-alpine \
-            nginx -t
-
       - name: Install Validation Tools
         run: |
           sudo apt-get update

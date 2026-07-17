@@ -7,8 +7,8 @@ services:
     restart: unless-stopped
 
     environment:
-      GF_SERVER_DOMAIN: node1
-      GF_SERVER_ROOT_URL0: https://grafana.tarush.in
+      GF_SERVER_DOMAIN: grafana.tarush.in
+      GF_SERVER_ROOT_URL: https://grafana.tarush.in
       GF_SERVER_SERVE_FROM_SUB_PATH: false
 
     volumes:

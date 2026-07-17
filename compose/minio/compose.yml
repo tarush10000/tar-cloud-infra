@@ -9,8 +9,8 @@ services:
     command: server /data --console-address ":9001"
 
     environment:
-      MINIO_ROOT_USER: tar
-      MINIO_ROOT_PASSWORD: change_this_password
+      MINIO_ROOT_USER: ${MINIO_USERNAME}
+      MINIO_ROOT_PASSWORD: ${MINIO_PASSWORD}
 
     volumes:
       - /srv/data/minio:/data

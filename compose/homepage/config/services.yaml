@@ -13,7 +13,7 @@
             type: portainer
             url: http://portainer:9000
             env: 2
-            key: "{{HOMEPAGE_VAR_PORTAINER_API_KEY}}"
+            key: "{{HOMEPAGE_VAR_PORTAINER_TOKEN}}"
 
     - Uptime Kuma:
         icon: uptime-kuma.png

@@ -5,9 +5,6 @@ services:
 
     restart: unless-stopped
 
-    env_file:
-      - /srv/docker/env/tar-cloud.env
-
     volumes:
       - /srv/tar-cloud-infra/compose/homepage/config:/app/config
       - /var/run/docker.sock:/var/run/docker.sock:ro

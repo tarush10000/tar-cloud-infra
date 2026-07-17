@@ -6,9 +6,6 @@ services:
 
     restart: unless-stopped
 
-    env_file:
-      - /srv/docker/env/tar-cloud.env
-
     environment:
       GF_SERVER_DOMAIN: node1
       GF_SERVER_ROOT_URL0: https://grafana.tarush.in

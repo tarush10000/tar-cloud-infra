@@ -6,9 +6,6 @@ services:
 
     restart: unless-stopped
 
-    env_file:
-      - /srv/docker/env/tar-cloud.env
-
     ports:
       - "5432:5432"
 

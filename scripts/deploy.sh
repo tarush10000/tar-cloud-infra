@@ -6,6 +6,10 @@ echo "=================================="
 echo "Deploying Tar Cloud Infrastructure"
 echo "=================================="
 
+set -a
+source /srv/docker/env/tar-cloud.env
+set +a
+
 find compose -name "compose.yml" | sort | while read -r file
 do
     echo ""

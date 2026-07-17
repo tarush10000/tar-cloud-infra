@@ -7,6 +7,7 @@ echo "Deploying Tar Cloud Infrastructure"
 echo "=================================="
 
 set -a
+# shellcheck disable=SC1091
 source /srv/docker/env/tar-cloud.env
 set +a
 

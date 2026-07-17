@@ -13,11 +13,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Validate Docker Compose Files
+        env:
+            CLOUDFLARE_TUNNEL_TOKEN: dummy
         run: |
-          find compose -name "compose.yml" -print0 | while IFS= read -r -d '' file; do
+            find compose -name "compose.yml" -print0 | while IFS= read -r -d '' file; do
             echo "Validating $file"
             docker compose -f "$file" config >/dev/null
-          done
+            done
 
       - name: Install Validation Tools
         run: |

@@ -1,46 +1,64 @@
+---
 - Infrastructure:
     - Homepage:
         icon: homepage.png
         href: https://home.tarush.in
+        description: Dashboard
 
     - Portainer:
         icon: portainer.png
         href: https://portainer.tarush.in
+        description: Docker Management
+        widget:
+            type: portainer
+            url: http://portainer:9000
+            env: 2
+            key: "{{HOMEPAGE_VAR_PORTAINER_API_KEY}}"
 
     - Uptime Kuma:
         icon: uptime-kuma.png
         href: https://kuma.tarush.in
+        description: Service Monitoring
 
 - Platform:
     - PostgreSQL:
         icon: postgres.png
-        description: Database
+        description: Primary Database
 
     - Redis:
         icon: redis.png
-        description: Cache
+        description: Cache Server
 
     - MinIO:
         icon: minio.png
         href: https://minio.tarush.in
+        widget:
+            type: minio
+            url: http://minio:9001
+            username: "{{HOMEPAGE_VAR_MINIO_USERNAME}}"
+            password: "{{HOMEPAGE_VAR_MINIO_PASSWORD}}"
 
 - Monitoring:
-    - Prometheus:
-        icon: prometheus.png
-        href: https://prometheus.tarush.in
-
     - Grafana:
         icon: grafana.png
         href: https://grafana.tarush.in
+        widget:
+            type: grafana
+            url: http://grafana:3000
+            username: "{{HOMEPAGE_VAR_GRAFANA_USERNAME}}"
+            password: "{{HOMEPAGE_VAR_GRAFANA_PASSWORD}}"
+
+    - Prometheus:
+        icon: prometheus.png
+        href: https://prometheus.tarush.in
 
 - Applications:
     - Portfolio:
         icon: mdi-web
         href: https://cloud.tarush.in
 
-    - API:
+    - Portfolio API:
         icon: mdi-api
-        description: Portfolio Backend
 
 - Utilities:
     - URL Shortener:

@@ -3,7 +3,11 @@
     - Homepage:
         icon: homepage.png
         href: https://home.tarush.in
-        description: Dashboard
+        description: Infrastructure Dashboard
+        widget:
+            type: uptimekuma
+            url: http://uptime-kuma:3001
+            slug: homepage-test
 
     - Portainer:
         icon: portainer.png
@@ -12,8 +16,16 @@
         widget:
             type: portainer
             url: http://portainer:9000
-            env: 2
+            env: 1
             key: "{{HOMEPAGE_VAR_PORTAINER_TOKEN}}"
+
+    - Nginx:
+        icon: nginx.png
+        description: Reverse Proxy
+        widget:
+            type: uptimekuma
+            url: http://uptime-kuma:3001
+            slug: nginx
 
     - Uptime Kuma:
         icon: uptime-kuma.png
@@ -24,51 +36,87 @@
     - PostgreSQL:
         icon: postgres.png
         description: Primary Database
+        widget:
+            type: uptimekuma
+            url: http://uptime-kuma:3001
+            slug: postgres
 
     - Redis:
         icon: redis.png
         description: Cache Server
+        widget:
+            type: uptimekuma
+            url: http://uptime-kuma:3001
+            slug: redis
 
     - MinIO:
         icon: minio.png
         href: https://minio.tarush.in
+        description: Object Storage
         widget:
-            type: minio
-            url: http://minio:9001
-            username: "{{HOMEPAGE_VAR_MINIO_USERNAME}}"
-            password: "{{HOMEPAGE_VAR_MINIO_PASSWORD}}"
+            type: uptimekuma
+            url: http://uptime-kuma:3001
+            slug: minio
+
+    - MinIO API:
+        icon: minio.png
+        description: S3 API
+        widget:
+            type: uptimekuma
+            url: http://uptime-kuma:3001
+            slug: minio-api
 
 - Monitoring:
     - Grafana:
         icon: grafana.png
         href: https://grafana.tarush.in
+        description: Metrics Dashboard
         widget:
             type: grafana
             url: http://grafana:3000
             username: "{{HOMEPAGE_VAR_GRAFANA_USERNAME}}"
             password: "{{HOMEPAGE_VAR_GRAFANA_PASSWORD}}"
 
+    - Grafana Status:
+        icon: grafana.png
+        description: Availability
+        widget:
+            type: uptimekuma
+            url: http://uptime-kuma:3001
+            slug: grafana
+
     - Prometheus:
         icon: prometheus.png
         href: https://prometheus.tarush.in
+        description: Metrics Collection
+        widget:
+            type: uptimekuma
+            url: http://uptime-kuma:3001
+            slug: prometheus
 
 - Applications:
     - Portfolio:
         icon: mdi-web
         href: https://cloud.tarush.in
+        description: Personal Portfolio
 
     - Portfolio API:
         icon: mdi-api
+        description: Gemini Backend
 
 - Utilities:
     - URL Shortener:
         icon: mdi-link
+        description: Coming Soon
 
     - QR Generator:
         icon: mdi-qrcode
+        description: Coming Soon
 
     - Linktree:
         icon: mdi-account-network
+        description: Coming Soon
 
     - Pastebin:
         icon: mdi-note-text
+        description: Coming Soon

@@ -1,0 +1,23 @@
+name: Deploy Infrastructure
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy
+        run: |
+          cd /srv/tar-cloud-infra
+          git pull
+
+          for f in compose/*/compose.yml
+          do
+            docker compose -f "$f" up -d
+          done

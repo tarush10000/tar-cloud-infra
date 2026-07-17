@@ -34,7 +34,4 @@ jobs:
           yamllint .
 
       - name: Validate Markdown
-        uses: DavidAnson/markdownlint-cli2-action@v19
-        with:
-          globs: |
-            **/*.md
+        uses: DavidAnson/markdownlint-cli2-action@v20

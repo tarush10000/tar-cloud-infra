@@ -26,4 +26,6 @@ echo "Deployment complete."
 echo ""
 echo "Deploying applications..."
 
-./deploy-apps.sh
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+"$SCRIPT_DIR/deploy-apps.sh"

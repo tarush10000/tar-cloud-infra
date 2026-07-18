@@ -10,10 +10,10 @@
         href: https://portainer.tarush.in
         description: Docker Management
         widget:
-            type: portainer
-            url: http://portainer:9000
-            env: 1
-            key: "{{HOMEPAGE_VAR_PORTAINER_TOKEN}}"
+          type: portainer
+          url: http://portainer:9000
+          env: 1
+          key: "{{HOMEPAGE_VAR_PORTAINER_TOKEN}}"
 
     - Uptime Kuma:
         icon: uptime-kuma.png
@@ -38,10 +38,10 @@
         icon: grafana.png
         href: https://grafana.tarush.in
         widget:
-            type: grafana
-            url: http://grafana:3000
-            username: "{{HOMEPAGE_VAR_GRAFANA_USERNAME}}"
-            password: "{{HOMEPAGE_VAR_GRAFANA_PASSWORD}}"
+          type: grafana
+          url: http://grafana:3000
+          username: "{{HOMEPAGE_VAR_GRAFANA_USERNAME}}"
+          password: "{{HOMEPAGE_VAR_GRAFANA_PASSWORD}}"
 
     - Prometheus:
         icon: prometheus.png

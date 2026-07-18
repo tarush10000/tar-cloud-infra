@@ -11,5 +11,5 @@
 - datetime:
     text_size: l
     format:
-        timeStyle: short
-        dateStyle: long
+      timeStyle: short
+      dateStyle: long

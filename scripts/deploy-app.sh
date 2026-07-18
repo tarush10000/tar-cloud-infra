@@ -2,10 +2,7 @@
 
 set -e
 
-SCRIPT_DIR="$(dirname "$0")"
+APP="$1"
 
-"$SCRIPT_DIR/discover-apps.sh" |
-while read -r APP
-do
-    "$SCRIPT_DIR/build-app.sh" "$APP"
-done
+"/srv/tar-cloud-infra/scripts/build-app.sh" \
+"/srv/apps/$APP"

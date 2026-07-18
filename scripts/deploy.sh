@@ -22,3 +22,8 @@ done
 
 echo ""
 echo "Deployment complete."
+
+echo ""
+echo "Deploying applications..."
+
+./scripts/deploy-apps.sh

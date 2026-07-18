@@ -26,4 +26,4 @@ echo "Deployment complete."
 echo ""
 echo "Deploying applications..."
 
-./scripts/deploy-apps.sh
+deploy-apps.sh

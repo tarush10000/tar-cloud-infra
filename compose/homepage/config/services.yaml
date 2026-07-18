@@ -12,7 +12,7 @@
         widget:
           type: portainer
           url: http://portainer:9000
-          env: 1
+          env: 3
           key: "{{HOMEPAGE_VAR_PORTAINER_TOKEN}}"
 
     - Uptime Kuma:
